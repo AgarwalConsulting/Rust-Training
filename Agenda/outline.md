@@ -1,4 +1,4 @@
-# Outline
+# Rust for Server-side development by `@algogrit`
 
 ## Day 1 (Basics)
 
@@ -78,8 +78,7 @@
 
 - Advanced Features
   - Unsafe Rust
-  - Advanced traits
-  - Advanced types
+  - Advanced traits & types
   - Advanced functions & closures
   - Macros
 
@@ -90,13 +89,12 @@
   - Turning our single-threaded web server into multi-threaded
 
 - Building a ReSTful API
-  - Serialization & deserialization
-    - JSON
-    - XML
+  - JSON serialization & deserialization
 
 - Working with `reqwest` to interact with third-party APIs
 
 - Adding authentication to your APIs
 
 - Building a micro-service based app using Rust
+  - Best practices & architecture
   - Adding graceful shutdown & cleanup
