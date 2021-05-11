@@ -1,4 +1,4 @@
-# Variables
+# Variables & Types
 
 - Immutable by default (`mut` keyword)
 - Allows shadowing!
