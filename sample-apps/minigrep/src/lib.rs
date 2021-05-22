@@ -48,7 +48,21 @@ pub fn run(config: Config) -> Result<(), Box<dyn Error>> {
 //     return (query, filename);
 // }
 
-fn search<'a>(query: &str, contents: &'a str) -> Vec<&'a str> {
+/// Searches for a given query in the given contents and returns the matching lines
+///
+/// # Examples
+///
+/// ```
+/// let query = "duct";
+/// let contents = "\
+/// Rust:
+/// safe, fast, productive.
+/// Pick three.
+/// Duct Tape!";
+///
+/// assert_eq!(vec!["safe, fast, productive."], minigrep::search(query, contents))
+/// ```
+pub fn search<'a>(query: &str, contents: &'a str) -> Vec<&'a str> {
     // let mut results = Vec::new();
     let mut results = vec!();
 
