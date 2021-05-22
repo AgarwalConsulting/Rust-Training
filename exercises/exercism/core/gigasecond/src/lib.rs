@@ -1,4 +1,3 @@
-extern crate chrono;
 use chrono::{Duration, DateTime, Utc};
 
 // Returns a Utc DateTime one billion seconds after start.
