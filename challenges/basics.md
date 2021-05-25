@@ -50,3 +50,7 @@ Test with "世界" as input.
 - DRY-up your logic
 
 ## 8. Exercism - [Sum of multiples](https://github.com/AgarwalConsulting/Rust-Training/tree/master/exercises/exercism/sum-of-multiples)
+
+## 9. Create a `Adder` type with `add` & `result` method on it which can keep track of the total
+
+`add` method takes a number as an argument
