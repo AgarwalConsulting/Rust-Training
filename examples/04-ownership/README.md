@@ -12,4 +12,4 @@ Rust uses a third approach: memory is managed through a system of ownership with
 - There can only be one owner at a time.
 - When the owner goes out of scope, the value will be dropped.
 
-## The `String` type
+## Things to remember

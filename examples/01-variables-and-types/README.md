@@ -2,7 +2,7 @@
 
 - Immutable by default (`mut` keyword)
 - Allows shadowing!
-- Enum for Errors (Result { Ok, Err})
+- Enum for Errors (`Result{ Ok<T>, Err }`)
   - `match` keyword
 - Types classification:
   - Scalar - integers, floating-point numbers, Booleans, and characters
