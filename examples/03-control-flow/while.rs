@@ -8,7 +8,13 @@ fn main() {
         println!("{}!", number);
 
         number -= 1;
-    }
+    };
 
     println!("LIFTOFF!!!");
+
+    // let unit_tuple: () = ();
+
+    // println!("Value of result: {:?}", result); // ?
+
+    // println!("Is a unit tuple: {}", result == unit_tuple);
 }
