@@ -43,3 +43,38 @@ Related keywords: `mod`, `pub`, `use`, `as`
   - Also has a multi-import syntax as well
 
 - `as`: Is used to aliasing an import
+
+---
+
+## Customizing builds with release profiles
+
+Cargo has two main profiles:
+
+- "dev" profile Cargo uses when you run `cargo build`
+- "release" profile Cargo uses when you run `cargo build --release`
+
+The dev profile is defined with good defaults for development, and the release profile has good defaults for release builds.
+
+The opt-level setting controls the number of optimizations Rust will apply to your code, with a range of 0 to 3.
+
+```toml
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+opt-level = 3
+```
+
+## Workspaces
+
+```bash
+cat Cargo.toml
+```
+
+```toml
+[workspace]
+
+members = [
+    "<crate names>",
+]
+```
