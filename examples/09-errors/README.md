@@ -1,6 +1,6 @@
 # Errors & panics
 
-Two options is Rust:
+Two options in Rust:
 
 - `panic!`
   - No recovery
