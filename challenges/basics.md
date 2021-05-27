@@ -40,7 +40,7 @@ Print numbers 1 to 100:
 
 ### Extra Challenge
 
-- Create a function `fizzBuzz` which takes a `i32` and returns a `&str`
+- Create a function `fizz_buzz` which takes a `i32` and returns a `&str`
 - Ensure that you define the logic in a separate module.
 
 ## 7. Input from user
