@@ -51,7 +51,7 @@ Rust has a type called `Rc<T>`, which is an abbreviation for reference counting,
 
 ## `RefCell<T>`
 
-Interior mutability is a design pattern in Rust that allows you to mutate data even when there are immutable references to that data.
+*Interior mutability* is a design pattern in Rust that allows you to mutate data even when there are immutable references to that data.
 
 ### Borrowing Rules
 
