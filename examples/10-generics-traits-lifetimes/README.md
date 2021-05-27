@@ -39,7 +39,21 @@ Trait can be implemented by structs in different modules too
 
 - Using trait bounds you can also have a "selective" generic implementation
 
-- We will discuss trait objects later
+#### Trait Objects
+
+Trait Objects allow dynamic dispatching or runtime polymorphism.
+
+A Trait Object usually takes the form: `Box<dyn {trait-name}>`
+
+## Object Safety Is Required for Trait Objects
+
+You can only make object-safe traits into trait objects.
+
+A trait is object safe if all the methods defined in the trait have the following properties:
+
+- The return type isn’t `Self`.
+
+- There are no generic type parameters.
 
 ## Lifetimes
 
