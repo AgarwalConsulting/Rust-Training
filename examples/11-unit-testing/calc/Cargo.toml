@@ -1,5 +1,5 @@
 [package]
-name = "adder"
+name = "calc"
 version = "0.1.0"
 authors = ["Gaurav Agarwal <algogrit@gmail.com>"]
 edition = "2018"

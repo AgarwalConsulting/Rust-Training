@@ -1,3 +1,5 @@
+pub mod calc;
+
 #[cfg(test)]
 mod tests {
     #[test]
