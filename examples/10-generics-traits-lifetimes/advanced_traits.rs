@@ -13,10 +13,10 @@ impl Summary for i32 {
     }
 }
 
-fn display<T, U>(s: T, c: U)
+fn display<'a, 'b, T, U>(s: T, c: U)
 where
-T: Summary + Debug + Copy,
-U: Drop {
+T: Summary + Debug + Copy + 'a,
+U: Drop + 'b {
     println!("{}", s.summarize());
 }
 
