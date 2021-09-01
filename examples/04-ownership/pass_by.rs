@@ -1,11 +1,11 @@
 fn increment(mut x: i32) {
-    x += 1 // Only the copy get's incremented
+    x += 1
 }
 
 fn main() {
-    let mut x = 10; // Get's allocated over the stack
+    let mut x = 10;
 
-    increment(x); // Copied in to increment
+    increment(x);
 
     println!("The value of x: {}", x);
 }
