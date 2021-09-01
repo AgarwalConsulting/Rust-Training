@@ -8,8 +8,11 @@ fn main() {
 
     // println!("The value of x: {:?}", x); // ?
 
-    let x = ['A'; 5];
-    let mut x = ['A', 'B', 'C', 'D', 'E'];
+
+    // let x : [char; 5] = ['A', 'B', 'C', 'D', 'E'];
+    // let mut x = ['A', 'B', 'C', 'D', 'E'];
+
+    let mut x = ['A'; 5];
 
     println!("The value of x: {:?}", x);
 
@@ -19,5 +22,6 @@ fn main() {
 
     println!("The value of x: {:?}", x);
 
+    // println!("Out of bound value: {}", x[6])
     println!("Out of bound value: {}", x[x.len() + 1]);
 }

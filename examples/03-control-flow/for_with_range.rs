@@ -6,6 +6,7 @@ fn main() {
     // }
     // println!("LIFTOFF!!!");
 
+    // for c in 'A'..(91 as char) {
     for c in 'A'..'Z' {
         println!("{}", c);
     }

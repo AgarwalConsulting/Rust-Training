@@ -7,6 +7,10 @@ fn main() {
 
     // println!("The value of i: {}", i)
 
+    // i = f.ceil() as i32;
+    // i = f.floor() as i32;
+    // i = f.round() as i32;
+
     let x: i32 = 1244363;
     let y: i8;
 

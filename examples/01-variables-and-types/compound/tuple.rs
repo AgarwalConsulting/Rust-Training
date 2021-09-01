@@ -1,9 +1,11 @@
 fn main() {
-    let mut t: (i32, char) = (42, "A");
+    let mut t: (i32, char) = (42, 'A');
 
     println!("The value of t: {:#?}", t);
 
-    println!("The first value: {}", t.0);
+    let v = t.0;
+
+    println!("The first value: {}", v);
 
     t.0 = 10;
 
