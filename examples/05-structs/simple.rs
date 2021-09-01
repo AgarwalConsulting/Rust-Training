@@ -26,7 +26,7 @@ fn main() {
 
     // println!("Person: {:#?}", p);
 
-    // // let mut p1 = p; // Move
+    // let mut p1 = p; // Move
 
     // // p1.name = String::from("Ranjith");
 

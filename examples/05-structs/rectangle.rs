@@ -20,10 +20,10 @@ fn main() {
 
     println!("Rectangle: {:?}", r);
 
-    println!("Area of rectangle: {}", r.area());
+    println!("Area of rectangle: {}", r.area()); // ?
 
     r.scale(2);
 
-    println!("Scaled rectangle: {:?}", r);
+    println!("Scaled rectangle: {:#?}", r);
     println!("Area of scaled rectangle: {}", r.area());
 }
