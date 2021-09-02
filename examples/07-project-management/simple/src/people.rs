@@ -1,5 +1,5 @@
 #[derive(Debug)]
-pub struct Person {
+pub (in super) struct Person {
     pub name: String,
     pub age: u8,
 }
@@ -10,6 +10,6 @@ impl Person {
     }
 }
 
-pub fn greeting(p: Person) {
-    println!("Hello, {}!", p.name);
-}
+// pub fn greeting(p: Person) {
+//     println!("Hello, {}!", p.name);
+// }
