@@ -1,9 +1,9 @@
 #[derive(Debug)]
 enum Action {
     Jump(i32),
-    Stop,
+    Stop, // ()
     Turn(String),
-    Walk,
+    Walk, // ()
 }
 
 fn do_action(a: Action) {
@@ -28,4 +28,6 @@ fn main() {
     do_action(some_action);
 
     do_action(Action::Stop);
+
+    do_action(Action::Walk);
 }

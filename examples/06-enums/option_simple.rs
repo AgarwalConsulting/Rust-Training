@@ -9,10 +9,10 @@ fn increment(i: Option<i32>) -> i32 {
     //     _ => 0,
     // }
     if let Some(x) = i {
-        x + 1
-    } else {
-        0
-    }
+        return x + 1
+    };
+
+    return 0
 }
 
 fn main() {
