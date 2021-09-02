@@ -2,15 +2,27 @@ fn main() {
     let namaste = String::from("नमस्ते");
     let russian_word = String::from("Здравствуйте");
 
-    for b in namaste.chars() {
-        println!("{}", b);
+    let man_raising_hand = String::from("🙋‍♂️");
+
+    for c in man_raising_hand.chars() {
+        println!("{}", c);
     }
 
-    for b in russian_word.chars() {
-        println!("{}", b);
-    }
+    // Vec<u8>
 
-    let partial_word = &russian_word[0..6];
+    // for b in namaste.bytes() {
+    //     println!("{}", b);
+    // }
 
-    println!("{}", partial_word);
+    // for b in namaste.chars() {
+    //     println!("{}", b);
+    // }
+
+    // for b in russian_word.chars() {
+    //     println!("{}", b);
+    // }
+
+    // let partial_word = &russian_word[0..6];
+
+    // println!("{}", partial_word);
 }

@@ -14,5 +14,11 @@ fn main() {
 
     println!("{:?}", v);
 
-    // println!("{}", s);
+    let ov = v.get(8);
+
+    // println!("{:?}", ov);
+
+    if let Some(val) = ov {
+        println!("{}", val);
+    };
 }

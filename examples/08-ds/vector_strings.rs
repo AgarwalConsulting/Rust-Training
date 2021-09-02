@@ -1,6 +1,6 @@
 fn main() {
-    let mut v = Vec::new();
-    // let mut v: Vec<&mut String> = Vec::new();
+    // let mut v = Vec::new();
+    let mut v: Vec<&mut String> = Vec::new();
 
     let a = String::from("Anushka");
     let p = String::from("Prashant");
