@@ -7,10 +7,10 @@ impl<T: Copy> Point<T> {
     }
 }
 
-#[derive(Debug)]
-struct Person{
-    name: String,
-}
+// #[derive(Debug)]
+// struct Person{
+//     name: String,
+// }
 
 fn main() {
     let graph_point: Point<i32> = Point(10, 12);
@@ -40,12 +40,3 @@ fn main() {
 
     // println!("First: {}", p);
 }
-
-//
-
-// enum Action<T> {
-//     Jump<T>,
-//     Stop,
-//     Turn(String),
-//     Walk,
-// }
