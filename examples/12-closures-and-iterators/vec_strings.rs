@@ -7,7 +7,7 @@ fn main() {
     l.push(String::from("Subham"));
     l.push(String::from("Anushka"));
 
-    let lengths: Vec<usize> = l.iter().map(|el| -> _ {
+    let lengths: Vec<usize> = l.iter().map(|el| {
         el.len()
     }).collect();
 
