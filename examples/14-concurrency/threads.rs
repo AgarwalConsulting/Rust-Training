@@ -14,5 +14,7 @@ fn main() {
         thread::sleep(Duration::from_millis(1));
     }
 
-    handle.join().unwrap();
+    handle.join().unwrap(); // Waits for the thread to complete
+
+    println!("Spawned thread, completed!");
 }
