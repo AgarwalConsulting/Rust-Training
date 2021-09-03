@@ -1,5 +1,5 @@
-fn greeter(by: String) -> Box<dyn Fn(String) -> String> {
-    return Box::new(move |name: String| -> String {
+fn greeter(by: String) -> Box<dyn Fn(&String) -> String> {
+    return Box::new(move |name: &String| -> String {
         let mut result = String::new();
         result.push_str(&by);
         result.push(' ');
@@ -13,6 +13,9 @@ fn main() {
     let say_hi = greeter(String::from("Hi"));
     let say_sayonara = greeter(String::from("Sayonara"));
 
-    println!("{}", say_sayonara(String::from("Gaurav")));
-    println!("{}", say_hi(String::from("Ranjith")));
+    let g = String::from("Gaurav");
+    let s = String::from("Suresh");
+
+    println!("{}", say_sayonara(&g));
+    println!("{}", say_hi(&s));
 }

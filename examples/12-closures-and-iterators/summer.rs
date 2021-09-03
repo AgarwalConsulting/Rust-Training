@@ -12,11 +12,11 @@ fn main() {
     let mut sum1 = summer();
     let mut sum2 = summer();
 
-    println!("{}", sum1(10)); // 10
-    println!("{}", sum1(20)); // 30
-    println!("{}", sum1(30)); // 60
+    println!("{}", sum1(10)); //
+    println!("{}", sum1(20)); //
+    println!("{}", sum1(30)); //
 
-    println!("{}", sum2(12)); // 12
-    println!("{}", sum2(20)); // 32
-    println!("{}", sum2(30)); // 62
+    println!("{}", sum2(12)); //
+    println!("{}", sum2(20)); //
+    println!("{}", sum2(30)); //
 }
