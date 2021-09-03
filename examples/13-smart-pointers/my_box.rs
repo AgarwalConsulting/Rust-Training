@@ -30,6 +30,7 @@ fn main() {
 
     println!("{}", *b + 1);
     println!("{}", b.deref() + 1);
+    // b.drop();
     drop(b);
     println!("Exiting main!");
 

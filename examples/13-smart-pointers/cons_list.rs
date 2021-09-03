@@ -1,6 +1,6 @@
 #[derive(Debug)]
-enum List {
-    Cons(i32, Box<List>),
+enum List<T> {
+    Cons(T, Box<List<T>>),
     Nil,
 }
 
