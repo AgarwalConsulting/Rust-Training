@@ -41,13 +41,15 @@ Convert strings to pig latin. The first consonant of each word is moved to the e
 
 Using a hash map and vectors, create a text interface to allow a user to add employee names to a department in a company. For example, “Add Sally to Engineering” or “Add Amir to Sales.” Then let the user retrieve a list of all people in a department or all people in the company by department, sorted alphabetically.
 
-## 5. Exercism: [Sublist](https://github.com/AgarwalConsulting/Rust-Training/tree/master/exercises/exercism/core/sublist)
+## 5. Exercism - [Sum of multiples](https://github.com/AgarwalConsulting/Rust-Training/tree/master/exercises/exercism/sum-of-multiples)
 
-## 6. Exercism: [Space Age](https://github.com/AgarwalConsulting/Rust-Training/tree/master/exercises/exercism/core/space-age)
+## 6. Exercism: [Sublist](https://github.com/AgarwalConsulting/Rust-Training/tree/master/exercises/exercism/core/sublist)
 
-## 7. Exercism: [Luhn](https://github.com/AgarwalConsulting/Rust-Training/tree/master/exercises/exercism/core/luhn)
+## 7. Exercism: [Space Age](https://github.com/AgarwalConsulting/Rust-Training/tree/master/exercises/exercism/core/space-age)
 
-## 8. Implement your own `filter` function
+## 8. Exercism: [Luhn](https://github.com/AgarwalConsulting/Rust-Training/tree/master/exercises/exercism/core/luhn)
+
+## 9. Implement your own `filter` function
 
   A filter function will take a slice & a predicate which evaluates to `bool`. The filter `fn` should return a slice back of same type.
 
@@ -58,6 +60,6 @@ Some predicate examples...
 - Display all heroes whose name's second character is a vowel (a, e, i, o u)
 - Display all heroes whose name doesn't contain "man" in it
 
-## 9. Fibonacci closure
+## 10. Fibonacci closure
 
   Implement a fibonacci function that returns a function (a closure) that returns successive fibonacci numbers (0, 1, 1, 2, 3, 5, ...).

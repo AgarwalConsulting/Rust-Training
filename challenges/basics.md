@@ -49,8 +49,6 @@ Have the user enter a string, then loop through the string to generate a new str
 
 Test with "世界" as input.
 
-## 8. Exercism - [Sum of multiples](https://github.com/AgarwalConsulting/Rust-Training/tree/master/exercises/exercism/sum-of-multiples)
-
-## 9. Create a `Adder` type with `add` & `result` method on it which can keep track of the total
+## 8. Create a `Adder` type with `add` & `result` method on it which can keep track of the total
 
 `add` method takes a number as an argument
