@@ -5,8 +5,8 @@ enum Animal {
 }
 
 fn main() {
-    // let v: Vec<Animal> = Vec::new();
-    let mut v = Vec::new();
+    let v: Vec<Animal> = Vec::new();
+    // let mut v = Vec::new();
 
     v.push(Animal::Lion{legs: 4});
     v.push(Animal::Ostrich{speed: 80});
