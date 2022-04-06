@@ -14,8 +14,11 @@ impl NewsArticle {
 }
 
 impl Summarizable for NewsArticle {
+    // fn new(content: String) -> NewsArticle {
+    //     NewsArticle{content, title: String::from("N/A"), author: String::from("N/A")}
+    // }
+
     fn summarize(&self) -> String {
         self.summarize()
-        // format!("\"{}\" written by {}", self.title, self.author)
     }
 }
