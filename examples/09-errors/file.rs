@@ -14,7 +14,7 @@ fn main() {
 
     let mut s = String::new();
 
-    f.read_to_string(&mut s).unwrap();
+    f.read_to_string(&mut s);
 
     println!("Contents: {}", s);
 

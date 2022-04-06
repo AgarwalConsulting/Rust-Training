@@ -12,9 +12,7 @@ fn get_guess() -> Result<u32, ParseIntError> {
 
     stdin().read_line(&mut guess);
 
-    let guess: Result<u32, ParseIntError> = guess.trim().parse();
-
-    return guess
+    guess.trim().parse::<u32>()
 }
 
 fn main() -> Result<(), ParseIntError> {
