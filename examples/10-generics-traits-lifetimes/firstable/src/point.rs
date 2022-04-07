@@ -14,3 +14,12 @@ impl<T> Firstable for Point<T>
         format!("{:?}", self.x)
     }
 }
+
+// impl<T> Firstable for Point<T>
+//     where T: Debug {
+
+//     type Item = T;
+//     fn first(&self) -> &T {
+//         &self.x
+//     }
+// }

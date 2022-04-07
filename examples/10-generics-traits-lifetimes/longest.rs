@@ -1,20 +1,25 @@
-fn longest<'a, 'b>(x: &'a str, y: &'b str) -> &'a str {
-    if x.len() > y.len() {
-        x
+use std::fmt::Display;
+
+fn longest<'a, T>(s1: &'a str, s2: &'a str, ann: T) -> &'a str
+    where T: Display {
+    println!("\tAnnouncing: {}", ann);
+    if s1.len() > s2.len() {
+        s1
     } else {
-        y
+        s2
     }
 }
 
 fn main() {
-    let a = String::from("hello");
+    let s1 = String::from("hello");
 
     let result;
 
-    {
-        let b = String::from("hi");
-        result = longest(&a, &b);
-    }
+    // {
+    let s2 = String::from("Namaste");
+
+    result = longest(&s1, &s2, String::from("Hey, Mukund!"));
+    // }
 
     println!("The largest is: {}", result);
 }

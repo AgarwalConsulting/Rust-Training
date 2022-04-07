@@ -6,7 +6,7 @@ use scratchpad::my_traits::Firstable;
 
 fn print_first<T>(v: T)
     where T: Firstable {
-    println!("\tFirst value: {}", v.first())
+    println!("\tFirst value: {:?}", v.first())
 }
 
 #[derive(Debug)]
