@@ -1,92 +1,133 @@
 # Rust for Server-side development by `@algogrit`
 
+Getting experienced software engineers prepared for building production-ready memory-safe applications.
+
+## Objectives
+
+- Understanding Rust's syntax
+- Working with Rust's ownership & borrowing
+- Structuring and writing testable Rust code
+- Working with and writing ReSTful applications
+- Working with Rust's concurrency and understanding advanced patterns
+
+## Prerequisites
+
+- At least one year of active programming experience
+- Familiarity with client/server Architecture or ReST
+- Familiarity with infrastructure tools/platforms like:
+  - Linux & Bash
+  - Docker or Kubernetes
+
 ## Day 1 (Basics)
 
 - Why Rust?
 
 - Getting Started with Rust Programming Language
   - Installation
-  - First Rust Program
-  - Programming Concepts
+  - `rustc` vs `cargo`
+  - Profiles
+    - `release` vs `dev` (debug)
+
+- Variables, Types & Functions
+  - Type inference
+  - Immutable vs `mut`
+  - Shadowing & Scopes
+    - Using `let` for binding
+  - Type conversion: `as` vs `into` vs `parse`
+  - `let` vs `const`
+  - `String` vs `&str`
+  - Compound Types: array, tuple
+  - Function syntax
+
+- Control Flow
+  - `if`
+    - assignment
+  - `loop`
+  - `while`
+  - `for _ in _`
+    - ranges
 
 - Introduction to Ownership
-  - References and Borrowing
-  - Slice Type
+  - Ownership rules
+  - Borrowing - through:
+    - References
+    - Slices
+  - Rust Borrow Checker: Mutable vs Immutable References
 
-- Using Structs to Structure Related Data
-  - Defining and Instantiating Structs
-  - Method Syntax
-
-- Enums and Pattern Matching
-  - Defining an Enum
-  - `match` Control Flow operator
-  - Control flow with `if let`
-
-- Manage Projects with Packages, Crates, and Modules
-  - Packages & Crates
-  - Modules
-  - Separating modules into different files
+- Structs
+  - Defining & instantiating
+  - `struct` as tuple
+  - Methods & Associative functions
 
 ## Day 2 (Intermediate)
 
-- Exploring Collections
-  - Storing Lists of Values with Vectors
-  - Storing UTF-8 Encoded Text with Strings
-  - Storing Keys with Associated Values in Hash Maps
+- Enums
+  - Defining & instantiating
+  - Using `match` for pattern matching
+  - Using `if let`
+  - Common Enums: `Option` & `Result`
+    - `expect`
 
 - Error Handling
-  - Unrecoverable Errors with panic!
-  - Recoverable Errors with Result
-  - To panic! Or Not to panic!
+  - `panic!` & unrolling of stack
+  - Errors as values using `Result`
+  - To `panic!` or not to `panic!`?
 
-- Generic Types, Traits, and Lifetimes
-  - Generic data types
-  - Traits: Defining shared behavior
-  - Validating references with Lifetimes
+- Understanding packages, crates & modules
+  - Multiple `bin` crates
+  - `lib` crate
+  - Defining & using modules
+  - Controlling access
 
-- Writing Automated Tests
-  - How to Write Tests?
-  - Controlling How Tests Are Run
-  - Test Organisation
-
-- Functional Language Features – Iterators and Closures
-  - Loops vs Iterators
-
-- Cargo and Crates.io extended
-  - Customise Builds with Release Profiles
-  - Publish a Crate to Crates.io
-  - Cargo Workspaces
-  - Install Binaries from Crates.io with Cargo Install
-  - Extend Cargo with Custom Command
+- Exploring Collections
+  - `Vector`
+  - String - `as_bytes` vs `as_chars`
+  - `HashMap`
 
 ## Day 3 (Advanced)
 
-- Exploring Smart Pointers
+- Generics
+  - Defining generic: `fn`, `struct`, `enum` & Methods
+  - Constraints using `trait`s
+  - Using `where`
+  - What are `std::marker::` traits?
 
-- Fearless Concurrency
-  - Threads
-  - Message passing between threads
-  - Shared-State concurrency
-  - Extensible concurrency with the `Sync` & `Send` traits
+- Advanced traits
+  - Trait Objects
+  - Introducing `Box` smart pointer
+  - Using `type` for generalizing traits
 
-- Object-Oriented Programming Features of Rust
-  - Object-Oriented Languages Characteristics
-  - Using Trait Objects
-  - Implementing an Object
+- Lifetimes & generics
+  - Lifetime ellision rules
 
-- Patterns and Matching
+- Writing test cases
+  - Unit vs Integration vs Doc tests
+  - Test Organization
+  - Controlling how tests are run
 
-- Advanced Features
-  - Unsafe Rust
-  - Advanced traits & types
-  - Advanced functions & closures
-  - Macros
+- Functional language features
+  - Closures
+    - `Fn` vs `FnMut` vs `FnOnce`
+  - Iterators
+    - `iter` vs `into_iter` vs `iter_mut`
+  - Loop vs Iterators
+
+- Smart Pointers
+  - `Box` revisited
+    - `Deref` & `Drop` traits
+  - `Rc`
+  - `RefCell`
 
 ## Day 4 (Server-side development)
 
-- Build a Web Server
-  - Building a single-threaded web server
-  - Turning our single-threaded web server into multi-threaded
+- Concurrency
+  - `std::thread`
+  - Sharing State: `Arc` & `Mutex`
+  - Communicating: `std::sync::mpsc`
+
+- Writing a web server
+  - Simple single-threaded server
+  - Making it multi-threaded
 
 - Building a ReSTful API
   - JSON serialization & deserialization
