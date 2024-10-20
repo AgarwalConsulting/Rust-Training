@@ -61,9 +61,10 @@ Getting experienced software engineers prepared for building production-ready me
 
 ## Day 2 (Intermediate)
 
-- Enums
+- Enums & Pattern Matching
   - Defining & instantiating
   - Using `match` for pattern matching
+    - refutable and irrefutable
   - Using `if let`
   - Common Enums: `Option` & `Result`
     - `expect`
@@ -94,6 +95,7 @@ Getting experienced software engineers prepared for building production-ready me
 
 - Advanced traits
   - Trait Objects
+    - `dyn`
   - Introducing `Box` smart pointer
   - Using `type` for generalizing traits
 
