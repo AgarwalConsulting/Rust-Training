@@ -12,8 +12,8 @@ fn b() {
 
 fn c() {
     let c = 30;
-    // println!("{}, {}, {}", a, b, c)
-    println!("{}", c);
+    println!("{}, {}, {}", a, b, c)
+    // println!("{}", c);
     ...
 }
 
