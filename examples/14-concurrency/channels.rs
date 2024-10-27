@@ -6,11 +6,15 @@ fn main() {
     let (tx, rx) = mpsc::channel();
 
     thread::spawn(move || {
-        let val = String::from("hi");
-        thread::sleep(Duration::from_secs(10));
+        println!("Sending...");
+        let val = 42;
+        thread::sleep(Duration::from_secs(3));
         tx.send(val).unwrap();
+        println!("Sent: {}", val);
     });
 
+    println!("Receiving...");
+    thread::sleep(Duration::from_secs(3));
     let received = rx.recv().unwrap();
-    println!("Got: {}", received);
+    println!("Received: {}", received);
 }
