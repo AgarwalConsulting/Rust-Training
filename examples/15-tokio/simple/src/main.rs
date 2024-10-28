@@ -39,6 +39,8 @@ async fn main() {
 
     let handle = tokio::spawn(get_nth_fib(n));
 
+    // tokio::join!() - For joining multiple futures
+
     let nth_fib = handle.await.unwrap();
 
     println!("The {n}th fib number is: {nth_fib}");
