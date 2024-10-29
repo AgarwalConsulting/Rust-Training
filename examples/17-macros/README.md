@@ -49,11 +49,11 @@ macro_rules! vec {
 
 - in the body of the code for the pattern associated with this arm
 
-  - temp_vec.push() within $()* is generated for each part that matches $() in the pattern zero or more times depending on how many times the pattern matches
+  - temp_vec.push() within `$()*` is generated for each part that matches `$()` in the pattern zero or more times depending on how many times the pattern matches
 
   <sup>*</sup> [patterns definition in documentation](https://doc.rust-lang.org/reference/macros-by-example.html)
 
-## Procedural Macros for Generating Code from Attributes
+## Procedural Macros for Generating Code from Attributes [Reference](https://doc.rust-lang.org/reference/procedural-macros.html)
 
 Procedural macros accept some code as an input, operate on that code, and produce some code as an output rather than matching against patterns and replacing the code with other code as declarative macros do.
 
