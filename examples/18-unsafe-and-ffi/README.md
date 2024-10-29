@@ -20,6 +20,8 @@ Rust has the keyword `extern` that facilitates the creation and use of a Foreign
 
 An FFI is a way for a programming language to define functions and enable a different (foreign) programming language to call those functions.
 
+Use [cxx](https://android.googlesource.com/platform/external/rust/cxx/+/232a0e3/README.md) for C++ FFI.
+
 ### Calling Rust Functions from Other Languages
 
 We can also use extern to create an interface that allows other languages to call Rust functions.
