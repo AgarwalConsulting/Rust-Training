@@ -1,4 +1,5 @@
 pub mod calc;
+pub mod point;
 
 #[cfg(test)]
 mod tests {
