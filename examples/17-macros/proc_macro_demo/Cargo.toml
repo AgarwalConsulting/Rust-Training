@@ -1,7 +1,0 @@
-[package]
-name = "proc_macro_demo"
-version = "0.1.0"
-edition = "2021"
-
-[dependencies]
-hello_macro_derive = { path = "../proc_macro_demo/hello_macro_derive" }
